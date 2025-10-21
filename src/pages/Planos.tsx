@@ -264,7 +264,7 @@ const Planos = () => {
             <div className="flex-1">
               <div className="flex items-center justify-center h-full">
                 <img
-                  src="https://digital.doctoriza.com.br/wp-content/uploads/2023/11/CHATGPT-E-DOCTORIZA-1024x682.png"
+                  src="https://imgur.com/Jyl8EwF.png"
                   alt="ChatGPT e Doctoriza"
                   className="rounded-3xl object-cover w-full max-w-xl shadow-lg"
                   style={{maxHeight: '350px'}}
@@ -331,7 +331,7 @@ const Planos = () => {
           <div className="bg-white rounded-3xl p-8 text-center">
             <div className="mb-4">
               <img
-                src="https://digital.doctoriza.com.br/wp-content/uploads/2025/06/implementacao.png"
+                src="https://imgur.com/DgIjZq4.png"
                 alt="Implementação Doctoriza"
                 className="mx-auto mb-2 rounded-2xl object-contain"
                 style={{maxWidth: '220px', maxHeight: '110px'}}
@@ -442,7 +442,7 @@ const Planos = () => {
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-8">
             <img
-              src="https://digital.doctoriza.com.br/wp-content/uploads/2024/10/Captura-de-tela-2024-10-10-144041.png"
+              src="https://imgur.com/0v3uCBm.png"
               alt="Parceira Doctoriza"
               className="mx-auto mb-4 rounded-2xl object-contain"
               style={{maxWidth: '220px', maxHeight: '110px'}}
