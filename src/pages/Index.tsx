@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import FunctionalitiesGrid from "@/components/FunctionalitiesGrid";
@@ -21,7 +22,7 @@ const Index = () => {
       
       <FeatureSection
         title="Chatbot Humanizado integrado ao ChatGPT, Google Gemini e outras IAs"
-        description="Tenha um chatbot sem botões muito similar a um atendimento humano! A Cloudia já entende áudios, se integra a diversos sistemas de agendamento e você pode contratar também o nosso módulo que adiciona IA (GPT, Gemini, Grok e outras) para ficar ainda mais natural e poderosa. Já imaginou tudo isso integrado ao sistema de agendamento da sua clínica?"
+  description="Tenha um chatbot sem botões muito similar a um atendimento humano! A Doctoriza já entende áudios, se integra a diversos sistemas de agendamento e você pode contratar também o nosso módulo que adiciona IA (GPT, Gemini, Grok e outras) para ficar ainda mais natural e poderosa. Já imaginou tudo isso integrado ao sistema de agendamento da sua clínica?"
         image={chatbotFeature}
         imageAlt="Chatbot com IA"
       />
@@ -32,7 +33,7 @@ const Index = () => {
         image={omnichannelFeature}
         imageAlt="Central Omnichannel"
         reversed
-        secondaryCta="Ver planos e valores"
+        secondaryCta={<a href="/planos"><Button variant="outline">Ver planos e valores</Button></a>}
       />
 
       <FeatureSection
@@ -40,7 +41,7 @@ const Index = () => {
         description="Através dos menus lista, funil e minhas atividades, você consegue visualizar de forma fácil todas as etapas que o paciente percorre no funil de vendas até a presença na consulta ou fechamento de um tratamento, contribuindo para um processo comercial organizado e simplificado."
         image={crmFeature}
         imageAlt="CRM e Funil de Vendas"
-        secondaryCta="Ver planos e valores"
+        secondaryCta={<a href="/planos"><Button variant="outline">Ver planos e valores</Button></a>}
       />
 
       <FunctionalitiesGrid />

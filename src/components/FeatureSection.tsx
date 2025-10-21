@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { ReactNode } from "react";
 
 interface FeatureSectionProps {
   title: string;
@@ -7,8 +8,8 @@ interface FeatureSectionProps {
   image: string;
   imageAlt: string;
   reversed?: boolean;
-  primaryCta?: string;
-  secondaryCta?: string;
+  primaryCta?: ReactNode;
+  secondaryCta?: ReactNode;
 }
 
 const FeatureSection = ({
@@ -32,13 +33,19 @@ const FeatureSection = ({
               {description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-primary hover:bg-primary-dark text-primary-foreground">
-                {primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline">
-                {secondaryCta}
-              </Button>
+              <a href="https://wa.me/5571992443407" target="_blank" rel="noopener noreferrer">
+                <Button style={{ backgroundColor: '#8FC78F', color: 'white' }} className="hover:opacity-90">
+                  {primaryCta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              {typeof secondaryCta === 'string' ? (
+                <a href="/funcionalidades">
+                  <Button variant="outline">
+                    {secondaryCta}
+                  </Button>
+                </a>
+              ) : secondaryCta}
             </div>
           </div>
           

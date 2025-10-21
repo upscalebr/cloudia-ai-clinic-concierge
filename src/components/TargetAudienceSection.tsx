@@ -18,11 +18,11 @@ const TargetAudienceSection = () => {
             Para quem somos feitos?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            A Cloudia é uma plataforma de gestão de atendimentos desenvolvida para aprimorar a experiência dos 
+            A Doctoriza é uma plataforma de gestão de atendimentos desenvolvida para aprimorar a experiência dos 
             pacientes em clínicas, laboratórios e hospitais. Ela utiliza um chatbot humanizado integrado ao ChatGPT 
             para garantir um atendimento ágil e eficiente.
           </p>
-          <Button size="lg" className="mt-6 bg-primary hover:bg-primary-dark text-primary-foreground">
+          <Button size="lg" style={{ backgroundColor: '#8FC78F', color: 'white' }} className="mt-6 hover:opacity-90">
             Fale com um consultor
           </Button>
         </div>

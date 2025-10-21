@@ -34,7 +34,7 @@ const ChannelsSection = () => {
             Entenda exatamente como será a experiência do seu paciente.
           </h2>
           <p className="text-lg text-white/90">
-            Como funciona a Cloudia para os pacientes? Basta clicar em uma das opções abaixo e enviar uma mensagem para entender como a Cloudia funciona.
+            Como funciona a Doctoriza para os pacientes? Basta clicar em uma das opções abaixo e enviar uma mensagem para entender como a Doctoriza funciona.
           </p>
         </div>
         
@@ -51,18 +51,22 @@ const ChannelsSection = () => {
                 <CardTitle className="text-xl">{channel.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <Button variant="outline" className="w-full">
-                  Testar agora!
-                </Button>
+                <a href="https://wa.me/351966591527" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full">
+                    Testar agora!
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-            Ver todos os modelos de teste
-          </Button>
+          <a href="https://wa.me/5571992443407" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" style={{ backgroundColor: '#8FC78F', color: 'white' }} className="hover:opacity-90">
+              Ver todos os modelos de teste
+            </Button>
+          </a>
         </div>
       </div>
     </section>

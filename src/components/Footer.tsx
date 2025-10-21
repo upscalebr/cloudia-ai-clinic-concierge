@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Cloud className="w-8 h-8" />
-              <span className="text-xl font-bold">cloudia</span>
+              <span className="text-xl font-bold">doctoriza</span>
             </div>
             <p className="text-white/80 text-sm">
               Secretária Virtual com IA para automatizar o agendamento da sua clínica.
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-sm text-white/60">
-          <p>© 2025 Cloudia. Todos os direitos reservados.</p>
+          <p>© 2025 Doctoriza. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,37 +1,29 @@
 import { Button } from "@/components/ui/button";
-import { Cloud } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <nav style={{ backgroundColor: 'rgb(0, 167, 231)' }} className="relative top-0 left-0 right-0 z-50 border-b border-border">
+      <div className="container mx-auto px-4 h-16 flex items-center">
         <div className="flex items-center gap-2">
-          <Cloud className="w-8 h-8 text-primary" />
-          <span className="text-xl font-bold text-foreground">cloudia</span>
+          <Link to="/">
+            <img src="https://imgur.com/SQYG7BC.png" alt="Doctoriza" className="h-10 w-auto" />
+          </Link>
         </div>
         
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#funcionalidades" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
+          <Link to="/funcionalidades" className="text-base text-white hover:text-white/80 transition-colors font-semibold">
             Funcionalidades
-          </a>
-          <a href="#para-quem" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          </Link>
+          <a href="#para-quem" className="text-base text-white hover:text-white/80 transition-colors font-semibold">
             Para quem
           </a>
-          <a href="#depoimentos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#depoimentos" className="text-base text-white hover:text-white/80 transition-colors font-semibold">
             Depoimentos
           </a>
-          <a href="#planos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/planos" className="text-base text-white hover:text-white/80 transition-colors font-semibold">
             Planos
-          </a>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm">
-            Login
-          </Button>
-          <Button size="sm" className="bg-primary hover:bg-primary-dark text-primary-foreground">
-            Falar com consultor
-          </Button>
+          </Link>
         </div>
       </div>
     </nav>

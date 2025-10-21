@@ -22,13 +22,13 @@ const BotPacienteSection = () => {
                   Ferramenta Gratuita
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Bot Paciente Oculto da Cloudia:
+                  Bot Paciente Oculto da Doctoriza:
                 </h2>
                 <h3 className="text-2xl font-semibold text-primary">
                   Descubra o que seus pacientes realmente pensam do seu atendimento
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  A Cloudia criou uma ferramenta gratuita e exclusiva que simula um "cliente oculto" entrando em contato 
+                  A Doctoriza criou uma ferramenta gratuita e exclusiva que simula um "cliente oculto" entrando em contato 
                   com sua clínica. Através de um atendimento 100% automatizado, nossa IA avalia a comunicação feita pela 
                   sua equipe via WhatsApp, medindo a agilidade, clareza e qualidade do atendimento em tempo real.
                 </p>
@@ -47,9 +47,11 @@ const BotPacienteSection = () => {
                   É como ter um "cliente oculto" auditando seus atendimentos, mas de forma mais rápida, automatizada e acessível.
                 </p>
 
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                  Saiba mais
-                </Button>
+                <a href="/funcionalidades">
+                  <Button size="lg" style={{ backgroundColor: '#8FC78F', color: 'white' }} className="hover:opacity-90">
+                    Saiba mais
+                  </Button>
+                </a>
               </div>
 
               <div className="relative">
